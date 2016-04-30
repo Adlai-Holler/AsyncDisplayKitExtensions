@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A75FB3D74AA778BD121B1CA2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1D9BF64DF01E150E44AA90 /* Pods.framework */; };
 		CCD63DBD1CD55BF900F7C188 /* AsyncDisplayKitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = CCD63DBC1CD55BF900F7C188 /* AsyncDisplayKitExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCD63DC51CD55D2400F7C188 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD63DC41CD55D2400F7C188 /* Types.swift */; };
+		CCD63DC71CD55E0E00F7C188 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD63DC61CD55E0E00F7C188 /* Layout.swift */; };
+		CCD63DC91CD55E6200F7C188 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD63DC81CD55E6200F7C188 /* Collections.swift */; };
+		CCD63DCB1CD565A500F7C188 /* Nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD63DCA1CD565A500F7C188 /* Nodes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A6BD49C3B50F4393F45BF45 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1D1D9BF64DF01E150E44AA90 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8162D21E2BEAF188966993 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CCD63DB91CD55BF900F7C188 /* AsyncDisplayKitExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AsyncDisplayKitExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD63DBC1CD55BF900F7C188 /* AsyncDisplayKitExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncDisplayKitExtensions.h; sourceTree = "<group>"; };
 		CCD63DBE1CD55BF900F7C188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD63DC41CD55D2400F7C188 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		CCD63DC61CD55E0E00F7C188 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		CCD63DC81CD55E6200F7C188 /* Collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
+		CCD63DCA1CD565A500F7C188 /* Nodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nodes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75FB3D74AA778BD121B1CA2 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25BD1105DFB026F4A08D22FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D1D9BF64DF01E150E44AA90 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58B72BBA4D17C5E9BB2944C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC8162D21E2BEAF188966993 /* Pods.debug.xcconfig */,
+				1A6BD49C3B50F4393F45BF45 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CCD63DAF1CD55BF900F7C188 = {
 			isa = PBXGroup;
 			children = (
 				CCD63DBB1CD55BF900F7C188 /* AsyncDisplayKitExtensions */,
 				CCD63DBA1CD55BF900F7C188 /* Products */,
+				58B72BBA4D17C5E9BB2944C2 /* Pods */,
+				25BD1105DFB026F4A08D22FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				CCD63DBC1CD55BF900F7C188 /* AsyncDisplayKitExtensions.h */,
+				CCD63DC41CD55D2400F7C188 /* Types.swift */,
+				CCD63DC61CD55E0E00F7C188 /* Layout.swift */,
+				CCD63DCA1CD565A500F7C188 /* Nodes.swift */,
+				CCD63DC81CD55E6200F7C188 /* Collections.swift */,
 				CCD63DBE1CD55BF900F7C188 /* Info.plist */,
 			);
 			path = AsyncDisplayKitExtensions;
@@ -70,10 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCD63DC11CD55BF900F7C188 /* Build configuration list for PBXNativeTarget "AsyncDisplayKitExtensions" */;
 			buildPhases = (
+				6BFF73BFD36A81E0ACCE36A2 /* Check Pods Manifest.lock */,
 				CCD63DB41CD55BF900F7C188 /* Sources */,
 				CCD63DB51CD55BF900F7C188 /* Frameworks */,
 				CCD63DB61CD55BF900F7C188 /* Headers */,
 				CCD63DB71CD55BF900F7C188 /* Resources */,
+				B9F87A5461D8870EBD2850CB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +163,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6BFF73BFD36A81E0ACCE36A2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9F87A5461D8870EBD2850CB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CCD63DB41CD55BF900F7C188 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD63DC91CD55E6200F7C188 /* Collections.swift in Sources */,
+				CCD63DC51CD55D2400F7C188 /* Types.swift in Sources */,
+				CCD63DC71CD55E0E00F7C188 /* Layout.swift in Sources */,
+				CCD63DCB1CD565A500F7C188 /* Nodes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +302,9 @@
 		};
 		CCD63DC21CD55BF900F7C188 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC8162D21E2BEAF188966993 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +315,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = adlai.AsyncDisplayKitExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CCD63DC31CD55BF900F7C188 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A6BD49C3B50F4393F45BF45 /* Pods.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -276,6 +356,7 @@
 				CCD63DC31CD55BF900F7C188 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
