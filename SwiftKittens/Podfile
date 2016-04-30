@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+
+use_frameworks!
+
+target "SwiftKittens" do
+	pod 'AsyncDisplayKit', '~> 1.9.7.2'
+	pod 'AsyncDisplayKitExtensions', :path => '..'
+end

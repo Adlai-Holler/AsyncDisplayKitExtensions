@@ -1,0 +1,32 @@
+PODS:
+  - AsyncDisplayKit (1.9.7.2):
+    - AsyncDisplayKit/PINRemoteImage (= 1.9.7.2)
+  - AsyncDisplayKit/ASDealloc2MainObject (1.9.7.2)
+  - AsyncDisplayKit/PINRemoteImage (1.9.7.2):
+    - AsyncDisplayKit/ASDealloc2MainObject
+    - PINRemoteImage/iOS (>= 2.1.2)
+  - AsyncDisplayKitExtensions (1.0.0):
+    - AsyncDisplayKit (~> 1.9.7.2)
+  - PINCache (2.2.2)
+  - PINRemoteImage/Core (2.1.4):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/iOS (2.1.4):
+    - PINRemoteImage/Core
+
+DEPENDENCIES:
+  - AsyncDisplayKit (~> 1.9.7.2)
+  - AsyncDisplayKitExtensions (from `..`)
+
+EXTERNAL SOURCES:
+  AsyncDisplayKitExtensions:
+    :path: ..
+
+SPEC CHECKSUMS:
+  AsyncDisplayKit: 1701c47761a3e274b82cc0c77e6294cfa69612f6
+  AsyncDisplayKitExtensions: e29f4b1d943c282b2791ef011255d2823f920279
+  PINCache: 078426d356ab95ef875e9e62e5c35a2ea3333c28
+  PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
+
+PODFILE CHECKSUM: 8ad8d16b6a9c2137d4daab2cee030a97eb2cd1fe
+
+COCOAPODS: 1.0.0.rc.1
